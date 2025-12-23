@@ -1,0 +1,73 @@
+import { OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { CommonUtil } from '../../utils/common-util';
+import { SharedEventsServiceService } from '../../services/shared-events-service.service';
+import { ChildCondition } from '../../models/childCondition.model';
+import { AppDataService } from '../../models/app-data/app-data.service';
+import { ApiDataService } from '../../models/api-data/api-data.service';
+import { ConditionalUtil } from '../../utils/wfe-conditional-util';
+import { GenerateFieldRow } from '../../utils/generate-field-util';
+import * as i0 from "@angular/core";
+export declare class SectionRendererComponent implements OnInit, OnDestroy {
+    private sharedEventsService;
+    private appDataService;
+    private apiDataService;
+    private cdRef;
+    sectionData: any;
+    stepPosition: any;
+    stepId: any;
+    stepName: any;
+    templateId: any;
+    rootData: any;
+    sideBarData: any;
+    emitterObj: {};
+    additionalParameter: any;
+    componentName: string;
+    paginateValue: any;
+    fieldValue: any;
+    is_bootstrap: boolean;
+    loader: {
+        name: string;
+        showSection: boolean;
+    };
+    isVisible: boolean;
+    mandatoryCondition: ChildCondition;
+    editableCondition: ChildCondition;
+    visibleCondition: ChildCondition;
+    commonUtil: CommonUtil;
+    conditionalUtil: ConditionalUtil;
+    generateUtil: GenerateFieldRow;
+    componentList: {};
+    componentMap: {
+        Table: import("rxjs").Observable<unknown>;
+        List: import("rxjs").Observable<unknown>;
+        TreeView: import("rxjs").Observable<unknown>;
+        Accordion: import("rxjs").Observable<unknown>;
+        ContextMenu: import("rxjs").Observable<unknown>;
+        Step: import("rxjs").Observable<unknown>;
+    };
+    isRenderStep: string;
+    useShadowDom: boolean;
+    useContentProjection: boolean;
+    constructor(sharedEventsService: SharedEventsServiceService, appDataService: AppDataService, apiDataService: ApiDataService, cdRef: ChangeDetectorRef);
+    trackBySectionFields(index: number, item: any): number;
+    trackBySections(index: number, item: any): number;
+    ngOnInit(): void;
+    private onFieldDataUpdated;
+    setOverride(property: any, value: any): void;
+    ngOnDestroy(): void;
+    generateRowData(field: any): {
+        api_key: any;
+        unique_id: string;
+        html_id: string;
+        mandatory: boolean;
+        editable: boolean;
+        response_api_key: any;
+        request_api_key: any;
+        repeatedBlockFieldId: any;
+        isApiResponse: boolean;
+        value: any;
+    };
+    static ɵfac: i0.ɵɵFactoryDeclaration<SectionRendererComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SectionRendererComponent, "app-section-renderer", never, { "sectionData": { "alias": "sectionData"; "required": false; }; "stepPosition": { "alias": "stepPosition"; "required": false; }; "stepId": { "alias": "stepId"; "required": false; }; "stepName": { "alias": "stepName"; "required": false; }; "templateId": { "alias": "templateId"; "required": false; }; "rootData": { "alias": "rootData"; "required": false; }; "sideBarData": { "alias": "sideBarData"; "required": false; }; }, {}, never, never, true, never>;
+}
+//# sourceMappingURL=section-renderer.component.d.ts.map

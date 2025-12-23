@@ -1,0 +1,42 @@
+import { AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
+import { ChildCondition } from '../../models/childCondition.model';
+import { SharedEventsServiceService } from '../../services/shared-events-service.service';
+import { CommonUtil } from '../../utils/common-util';
+import { LoaderService } from '../../services/loader-service';
+import * as i0 from "@angular/core";
+export declare class DrawerComponent implements AfterViewInit, OnDestroy {
+    private sharedEventsService;
+    private loaderService;
+    modal: ElementRef<HTMLDialogElement>;
+    dial: ElementRef<HTMLDialogElement>;
+    autoPreviewConfigPath: string;
+    configBlockPath: string;
+    stepId: any;
+    templateId: any;
+    rootData: any;
+    rowData: any;
+    data: any;
+    variableObj: any;
+    lastClickedElement: EventTarget | null;
+    mandatoryCondition: ChildCondition;
+    editableCondition: ChildCondition;
+    visibleCondition: ChildCondition;
+    startSession: any;
+    modalButtons: any;
+    commonUtil: CommonUtil;
+    private isLoadingState;
+    private loadingSubscription?;
+    constructor(sharedEventsService: SharedEventsServiceService, loaderService: LoaderService);
+    ngOnInit(): void;
+    closeModal(): void;
+    onEscapeKey(event: KeyboardEvent): void;
+    onDialogClose(): void;
+    openModal(): void;
+    handleDocumentClick(event: MouseEvent): void;
+    ngAfterViewInit(): void;
+    ngOnDestroy(): void;
+    isHTML(value: string): boolean;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DrawerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DrawerComponent, "cee-drawer-renderer", never, { "stepId": { "alias": "stepId"; "required": false; }; "templateId": { "alias": "templateId"; "required": false; }; "rootData": { "alias": "rootData"; "required": false; }; "rowData": { "alias": "rowData"; "required": false; }; "data": { "alias": "data"; "required": false; }; }, {}, never, never, true, never>;
+}
+//# sourceMappingURL=drawer-renderer.component.d.ts.map

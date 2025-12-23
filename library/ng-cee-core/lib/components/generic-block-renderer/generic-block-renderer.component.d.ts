@@ -1,0 +1,83 @@
+import { OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { SharedEventsServiceService } from '../../services/shared-events-service.service';
+import { AppDataService } from '../../models/app-data/app-data.service';
+import { ApiDataService } from '../../models/api-data/api-data.service';
+import { ConditionalUtil } from '../../utils/wfe-conditional-util';
+import { CommonUtil } from '../../utils/common-util';
+import { ChildCondition } from '../../models/childCondition.model';
+import { WfeStepLoaderService } from '../../services/wfe-step-loader.service';
+import { GenerateFieldRow } from '../../utils/generate-field-util';
+import { AppData } from '../../models/app-data/app-data.model';
+import * as i0 from "@angular/core";
+export declare class GenericBlockRendererComponent implements OnInit, OnDestroy {
+    private http;
+    private appDataService;
+    private apiDataService;
+    private sharedEventsServiceService;
+    private wfeStepLoaderService;
+    private cdRef;
+    autoPreviewConfigPath: string;
+    configBlockPath: string;
+    stepId: any;
+    fieldData: any;
+    templateId: any;
+    blockPosition: number;
+    rootData: any;
+    isAttachmentBlock: any;
+    visibleCondition: ChildCondition;
+    editableCondition: ChildCondition;
+    mandatoryCondition: ChildCondition;
+    viewcomp: any;
+    appData: AppData;
+    blockRenderedData: any;
+    additionalParameter: {};
+    conditionObj: {};
+    isEditable: boolean;
+    isVisible: boolean;
+    isMandatory: boolean;
+    blockId: string;
+    skipLoader: boolean;
+    conditionalUtil: ConditionalUtil;
+    rowData: {};
+    is_bootstrap: boolean;
+    progressBlock: any;
+    variableObj: {};
+    commonUtil: CommonUtil;
+    generateUtil: GenerateFieldRow;
+    attachmentFieldData: any;
+    attachmentBlockField: any;
+    customClassCondition: boolean;
+    isHamburgerMenu: boolean;
+    componentMap: import("rxjs").Observable<typeof import("../../field-components/cee-attachments/cee-attachments.component").CeeAttachmentsComponent>;
+    constructor(http: HttpClient, appDataService: AppDataService, apiDataService: ApiDataService, sharedEventsServiceService: SharedEventsServiceService, wfeStepLoaderService: WfeStepLoaderService, cdRef: ChangeDetectorRef);
+    ngOnInit(): void;
+    trackById(index: number, item: any): number;
+    renderBolckData(): void;
+    processBlockData(data: any): void;
+    private onFieldDataUpdated;
+    ngOnDestroy(): void;
+    /**
+     * function that sets the progress Bar data based on the map to section ids
+     */
+    setProgressBlockRenderer(): boolean;
+    private onFieldDataUpdatedForGenericBlock;
+    setFieldValueOnSetValuesEvent(data: object): void;
+    setOverride(property: any, value: any): void;
+    get navigateStepName(): boolean;
+    generateRowData(field: any): {
+        api_key: any;
+        unique_id: string;
+        html_id: string;
+        mandatory: boolean;
+        editable: boolean;
+        response_api_key: any;
+        request_api_key: any;
+        repeatedBlockFieldId: any;
+        isApiResponse: boolean;
+        value: any;
+    };
+    static ɵfac: i0.ɵɵFactoryDeclaration<GenericBlockRendererComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<GenericBlockRendererComponent, "generic-block-renderer", never, { "stepId": { "alias": "stepId"; "required": false; }; "fieldData": { "alias": "fieldData"; "required": false; }; "templateId": { "alias": "templateId"; "required": false; }; "blockPosition": { "alias": "blockPosition"; "required": false; }; "rootData": { "alias": "rootData"; "required": false; }; "isAttachmentBlock": { "alias": "isAttachmentBlock"; "required": false; }; "visibleCondition": { "alias": "visibleCondition"; "required": false; }; "editableCondition": { "alias": "editableCondition"; "required": false; }; "mandatoryCondition": { "alias": "mandatoryCondition"; "required": false; }; }, {}, never, never, true, never>;
+}
+//# sourceMappingURL=generic-block-renderer.component.d.ts.map

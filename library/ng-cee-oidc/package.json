@@ -1,0 +1,27 @@
+{
+  "name": "ng-cee-oidc",
+  "version": "117.2.20",
+  "peerDependencies": {
+    "@angular/common": "^17.3.10",
+    "@angular/core": "^17.3.10",
+    "jwt-decode": "^4.0.0",
+    "angular-oauth2-oidc": "^17.0.1"
+  },
+  "module": "fesm2022/ng-cee-oidc.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ng-cee-oidc.mjs",
+      "esm": "./esm2022/ng-cee-oidc.mjs",
+      "default": "./fesm2022/ng-cee-oidc.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

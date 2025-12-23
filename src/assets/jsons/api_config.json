@@ -1,0 +1,20 @@
+{
+  "message": "Config file created successfully",
+  "config": [
+    {
+      "id": "sampleHandler",
+      "url": "${BASE_URL}/endpoint",
+      "methodType": "post",
+      "requestType": "application/json",
+      "urlParams": [],
+      "queryParams": [],
+      "headerParams": [],
+      "requestBody": [],
+      "isESB": false,
+      "storageType": "persist",
+      "workflowData": [],
+      "hasAuthorisation": true,
+      "isExternal": false
+    }
+  ]
+}

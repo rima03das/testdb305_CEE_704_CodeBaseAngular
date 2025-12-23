@@ -1,0 +1,158 @@
+{
+	"name_for_your_project_2169822": {
+		"type": "single",
+		"errors": {
+			"Mandatory": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": "message_mandatory",
+						"displayOn": true
+					}
+				]
+			},
+			"Regex": {
+				"priority": 1,
+				"messages": [
+					{
+						"value": "^[0-9]*$",
+						"messageId": "cvv_validate",
+						"displayOn": false
+					}
+				]
+			},
+			"MinLength": {
+				"priority": 2,
+				"messages": [
+					{
+						"value": 2,
+						"messageId": "message_min_length_3",
+						"displayOn": true
+					}
+				]
+			},
+			"MaxLength": {
+				"priority": 3,
+				"messages": [
+					{
+						"value": 4,
+						"messageId": "message_max_length_3",
+						"displayOn": true
+					}
+				]
+			}
+		}
+	},
+	"name_for_your_project_21698121": {
+		"type": "multiple",
+		"errors": {
+			"Mandatory": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": "message_mandatory",
+						"displayOn": true
+					}
+				]
+			},
+			"Regex": {
+				"priority": 1,
+				"messages": [
+					{
+						"value": "@",
+						"messageId": "message_no_special_characters",
+						"displayOn": true
+					},
+					{
+						"value": "^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$",
+						"messageId": "message_password",
+						"displayOn": false
+					}
+				]
+			},
+			"MinLength": {
+				"priority": 2,
+				"messages": [
+					{
+						"value": 10,
+						"messageId": "message_min_length_10",
+						"displayOn": true
+					},
+					{
+						"value": 11,
+						"messageId": "message_min_length_11",
+						"displayOn": true
+					},
+					{
+						"value": 12,
+						"messageId": "message_min_length_12",
+						"displayOn": true
+					}
+				]
+			},
+			"MaxLength": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": 20,
+						"messageId": "message_max_length_20",
+						"displayOn": true
+					},
+					{
+						"value": 21,
+						"messageId": "message_max_length_21",
+						"displayOn": true
+					},
+					{
+						"value": 22,
+						"messageId": "message_max_length_22",
+						"displayOn": true
+					}
+				]
+			}
+		}
+	},
+	"fieldId2": {
+		"type": "multiple",
+		"errors": {
+			"Mandatory": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": ""
+					}
+				]
+			},
+			"Regex": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": ""
+					}
+				]
+			},
+			"MinLength": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": ""
+					}
+				]
+			},
+			"MaxLength": {
+				"priority": 0,
+				"messages": [
+					{
+						"value": "",
+						"messageId": ""
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+// @import "./common/index.scss";
+// @import "./steps/index.scss";
+
+body {
+  // max-height: 100vh;
+  // min-height: 100vh;
+  // overflow-y: hidden;
+  height: 100vh;
+  // max-height: 100vh;
+
+  .main-body {
+    height: 100vh;
+    // display: flex;
+    // max-height: 100vh;
+    // min-height: 100vh;
+    // overflow: hidden;
+    // position: fixed;
+    // overflow-y: auto;
+    //  height: 100%;
+    // overflow-y: hidden;
+    // padding: 1.5%;
+    padding: 0;
+    margin: 0;
+
+    .step-body {
+      position: relative;
+      border-radius: 0px;
+      margin: 0;
+      height: 100vh;
+      //  overflow: hidden;     /* Set maximum height to 100% of the viewport height */
+      //  overflow-y: auto;git
+      // margin: 0;
+      padding: 1%;
+
+      .main-section-wrapper {
+        // min-height: calc(100vh - (90px + 2.5%));
+        // max-height: calc(100vh - (90px + 2.5%));
+        // height: calc(100vh - (90px + 2.5%));
+
+        .section-nested-body {
+          // min-height: calc(100vh - (90px));
+          // max-height: calc(100vh - (90px));
+          // height: calc(100vh - (90px));
+          // gap: 0.5%;
+          flex-wrap: nowrap;
+          gap: 0.5%;
+          // height: 80vh;
+          padding-top: 1%;
+          justify-content: space-between;
+          // overflow-y: auto;
+          // gap: 10px;
+
+          .section-nested-body {
+            // min-height: 100%;
+            // max-height: 100%;
+            // height: 100%;
+            padding: 0;
+            margin: 0;
+            // justify-content: unset;
+            // gap: 0;
+            flex-wrap: wrap;
+            overflow-y: unset;
+            gap: 0;
+            justify-content: unset;
+
+            // flex-direction: ;
+            //  gap: 15px;
+          }
+
+          .content-wrapper {
+            //   background: #fff 0% 0% no-repeat padding-box;
+            // height: 100%;
+            //  padding-left: 5px;
+            // overflow-y: auto;
+            flex: 5;
+            padding: 0 15px;
+            height: 78vh;
+            overflow-y: auto;
+            //padding-left: 15px;
+            //  background: #4b74e3 0% 0% no-repeat padding-box;
+            // box-shadow: 0px 2px 15px rgba(75, 116, 227, 0.4039215686);
+            border-radius: 15px;
+            // overflow: hidden;
+            // height: calc( 100vh - 10% );
+
+            .content-wrapper-elements {
+              margin: 0;
+              height: 100%;
+
+              .content-elements-wrapper {
+                overflow-y: auto;
+                // padding-right: 0;
+                padding: 0;
+                height: 78vh;
+                border-radius: 0 15px 15px 0;
+
+                .form-content-wrapper {
+                  // height: 70vh;
+                  
+                  .cee-section {
+                    padding: 10px;
+                  }
+                }
+
+                .heading-wrapper {
+                  padding-block: 5px;
+                  padding-inline-start: 22px;
+
+                  .cee-section {
+                    align-items: center;
+                    // max-height: 400px;
+                    // overflow: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        //     max-height: 100vh;
+        // min-height: 100vh;
+      }
+    }
+  }
+}
+
+.progress-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  // opacity: 0.50;
+  z-index: 9999;
+  background-color:#00000079;
+}
